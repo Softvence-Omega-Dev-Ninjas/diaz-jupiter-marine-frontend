@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import banner from "@/assets/search-listing-image/banner.jpg";
-import { IoSearchSharp } from "react-icons/io5";
+import { IoSearchSharp, IoSparkles } from "react-icons/io5";
 import CustomContainer from "@/components/CustomComponents/CustomContainer";
 import FilterListing from "./_components/FilterListing";
 import AllListing from "./_components/AllListing";
@@ -10,24 +10,27 @@ import AdComponent from "@/components/CustomComponents/AdComponent";
 
 const SearchListingPage = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  
 
   return (
     <div>
      <CustomBanner banner={banner}>
-        <div className="text-center">
-          <h1 className="text-white text-xl md:text-4xl lg:text-6xl uppercase font-bold md:tracking-[5px]">
-            search FROM LISTING
-          </h1>
-          <div className="bg-white p-1 md:p-3 rounded-2xl max-w-7xl w-full flex items-center gap-2 md:gap-5 mt-2">
+        <div className="text-center mt-[5%] p-7 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center gap-5">
+          <div className="bg-white p-1 md:p-3 rounded-2xl  w-full flex items-center gap-2 md:gap-5">
             <input
               type="text"
-              placeholder="Search..."
-              className="px-4 py-2 md:py-3 rounded-lg focus:outline-none w-full bg-gray-100"
+              placeholder="Example: find me a Viking for sale from 2005 to 2008"
+              className="px-4 py-2 md:py-1 focus:outline-none w-full"
             />
-            <button className="bg-secondary text-sm md:text-base text-white px-2 md:px-4 py-2 md:py-3 rounded-lg hover:bg-secondary transition-colors flex items-center gap-2 min-w-max">
+            <button className="px-3 py-2 rounded-xl bg-gray-200 text-black flex items-center gap-1 min-w-max  font-semibold">
+              <IoSparkles className=" text-black" />
+              <p>Ask AI</p>
+            </button>
+            
+          </div>
+          <button className="bg-secondary text-sm md:text-base text-white px-2 md:px-5 py-2 md:py-4 rounded-lg hover:bg-secondary transition-colors flex items-center gap-2 min-w-max">
               <IoSearchSharp /> <span>Show My Boat</span>
             </button>
-          </div>
         </div>
      </CustomBanner>
 

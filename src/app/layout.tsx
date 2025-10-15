@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Florida yacht trader",
+  title: "Jupiter Marine Sales",
   description: "Hire with trust, Work with confidence.",
   // icons: {
   //   icon: "/favicon.svg",
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} max-w-screen overflow-x-hidden antialiased font-inter`}
       >
-           <Toaster />
+        <Toaster />
         {children}
       </body>
     </html>

@@ -1,20 +1,20 @@
-import CustomBanner from "@/components/CustomComponents/CustomBanner";
-import banner from "@/assets/contact/banner.jpg";
+
 import return_policy_icon from "@/assets/contact/return_policy_icon.svg";
 import CustomContainer from "@/components/CustomComponents/CustomContainer";
 import Image from "next/image";
 import GetInTouch from "./_components/GetInTouch";
 import ContactForm from "./_components/ContactForm";
+import GradientBannerCustom from "@/components/CustomComponents/GradientBannerCustom";
 
 const ContactPage = () => {
 
   return (
     <div>
-      <CustomBanner banner={banner}>
+      <GradientBannerCustom>
         <h1 className="text-white text-xl md:text-4xl lg:text-6xl uppercase font-bold md:tracking-[5px] text-center leading-normal">
           Get in Touch with <br /> Florida Yacht Traders
         </h1>
-      </CustomBanner>
+      </GradientBannerCustom>
       <CustomContainer>
         <div className="py-10 md:py-12 lg:py-16">
           <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
