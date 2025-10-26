@@ -1,20 +1,19 @@
-"use client";
-import React, { useState } from "react";
-import banner from "@/assets/search-listing-image/banner.jpg";
-import { IoSearchSharp, IoSparkles } from "react-icons/io5";
-import CustomContainer from "@/components/CustomComponents/CustomContainer";
-import FilterListing from "./_components/FilterListing";
-import AllListing from "./_components/AllListing";
-import CustomBanner from "@/components/CustomComponents/CustomBanner";
-import AdComponent from "@/components/CustomComponents/AdComponent";
+'use client';
+import React, { useState } from 'react';
+import banner from '@/assets/search-listing-image/banner.jpg';
+import { IoSearchSharp, IoSparkles } from 'react-icons/io5';
+import CustomContainer from '@/components/CustomComponents/CustomContainer';
+import FilterListing from './_components/FilterListing';
+import AllListing from './_components/AllListing';
+import CustomBanner from '@/components/CustomComponents/CustomBanner';
+import AdComponent from '@/components/CustomComponents/AdComponent';
 
 const SearchListingPage = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  
 
   return (
     <div>
-     <CustomBanner banner={banner}>
+      <CustomBanner banner={banner}>
         <div className="text-center mt-[5%] p-7 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center gap-5">
           <div className="bg-white p-1 md:p-3 rounded-2xl  w-full flex items-center gap-2 md:gap-5">
             <input
@@ -26,13 +25,12 @@ const SearchListingPage = () => {
               <IoSparkles className=" text-black" />
               <p>Ask AI</p>
             </button>
-            
           </div>
           <button className="bg-secondary text-sm md:text-base text-white px-2 md:px-5 py-2 md:py-4 rounded-lg hover:bg-secondary transition-colors flex items-center gap-2 min-w-max">
-              <IoSearchSharp /> <span>Show My Boat</span>
-            </button>
+            <IoSearchSharp /> <span>Show My Boat</span>
+          </button>
         </div>
-     </CustomBanner>
+      </CustomBanner>
 
       <CustomContainer>
         <div className="md:hidden my-4">
@@ -75,7 +73,7 @@ const SearchListingPage = () => {
         )}
       </CustomContainer>
 
-     <AdComponent />
+      <AdComponent />
     </div>
   );
 };
