@@ -13,7 +13,7 @@ const Banner = () => {
         muted
         playsInline
       >
-        <source src="/bg-video/banner.mp4" type="video/mp4" />
+        <source src="/bg-video/bannerr.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
